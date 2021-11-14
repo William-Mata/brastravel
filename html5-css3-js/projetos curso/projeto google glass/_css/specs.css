@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*todo arquivo css deve começar com esse comando e o tipo de languagem*/
+
+section#conteudo {
+    /*section e uma seceção dentro do html conteudo e o nome do identificador */
+    width: auto;
+    /*largura do conteudo que esta defenida com automatico*/
+    margin: auto;
+    /*tamanho da margem de um conteudo que esta definida com automatica*/
+}
+
+iframe#frame-specs {
+    /*iframe e uma pagina dentro de outra que esta no arquivo de html conteudo e o nome do identificador */
+    float: right;
+    /*conteudo no lado direito da tela*/
+    width: 450px;
+    /*largura do conteudo*/
+    height: 280px;
+    /*altura do conteudo*/
+    border: none;
+    /*remove a borda do conteúdo nesse caso removeu o do iframe*/
+    margin-right: 200px;
+    /* cria uma margem do lado direito do conteudo*/
+    overflow: hidden;
+}
+
+section#conteudo img#oculos-spec {
+    float: center;
+    /*faz com que o objeto fique no lado esquerdo da tela*/
+    margin-left: 250px;
+    /* cria uma margem do lado direito do conteudo*/
+}
+
+area {
+    outline: none;
+}

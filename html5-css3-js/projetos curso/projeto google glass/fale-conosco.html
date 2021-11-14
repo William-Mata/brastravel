@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang=pt-br>
+
+<head>
+    <meta charset="UTF-8 " />
+    <title>Tudo sobre o Google Glass</title>
+    <link rel="stylesheet" href="_css/estilo.css" />
+    <link rel="stylesheet" href="_css/form.css" />
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <script>
+        function calculo_qtd() {
+            var qtd = parseInt(document.getElementById('cquantidade').value);
+            tot = qtd * 1500;
+            document.getElementById('ctotal').value = tot;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="_imagens/glass-oculos-preto-peq.png " />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmousemove="mudaricone('_imagens/home.png')" onmouseout="mudaricone('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmousemove="mudaricone('_imagens/especificacoes.png')" onmouseout="mudaricone('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmousemove="mudaricone('_imagens/fotos.png')" onmouseout="mudaricone('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmousemove="mudaricone('_imagens/multimidia.png')" onmouseout="mudaricone('_imagens/contato.png')"><a href="multimidia.html">Multimída</a></li>
+                    <li onmousemove="mudaricone('_imagens/contato.png')"><a href="fale-conosco.html">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full">
+            <article id="cabecalho-pag">
+                <header id="cabecalho-corpo">
+                    <hgroup>
+                        <h2>Glass > Multimídia</h2>
+                        <h1>Sons e Vídeos</h1>
+                        <h3>por Gafanhoto</h3>
+                        <h3><span>Atualizado em 01/Maio/2013</span></h3>
+                    </hgroup>
+                </header>
+            </article>
+        </section>
+
+
+        <form method="post" id="fcontato" action="mailto:william.xavante@gmail.com" oninput="calculo_qtd();">
+            <fieldset id="usuario">
+                <legend>Identificação do Usuário</legend>
+                <p><label for="cnome">Nome:<input type="text" name="tnome" id="cnome" size="30" maxlength="30" placeholder="Nome Sobrenome" /></p>
+                    <p><label for="csenha">Senha:</label> <input type="password" name="tsenha" id="csenha" size="10" maxlength="10" placeholder="********" /></p>
+                <p><label for="cemail">E-mail:</label><input type="email" name="temail" id="cemail" size="30" maxlength="30" placeholder="exemplo@gmail.com" /></p>
+                <fieldset id="sexo">
+                    <legend> Sexo: </legend>
+                    <input type="radio" name="tsexo" id="cmas" size="20" checked> <label for="cmas"> Masculino</label></br>
+                    <input type="radio" name="tsexo" id="cfem" size="20" /><label for="cfem">Feminino</label></fieldset>
+                <p><label for="cdata">Data de Nascimento:</label><input type="date" name="tdata" id="cdata" size="10" maxlength="10" placeholder="00/00/0000" /></p>
+            </fieldset>
+
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário </legend>
+                <p><label for="clargadouro">Logradouro:</label><input type="text" name="tlargadouro" id="clargadouro" size="20" maxlength="20" placeholder="Rua/Av Nome Da Rua/Av" /></p>
+                <p><label for="cnumero">Número: </label><input type="number" name="tnumero" id="cnumero" size="5" maxlength="5" min="1" max="99999" placeholder="99999" /></p>
+                <p><label for="cestado">Estado:</label>
+                    <select name="testado" id="cestado"></p>
+                        <optgroup label="Regiao Sul">
+                            <option value="RJ"selected >RJ </option>
+                            <option value="MG" >MG</option>
+                            <option value="SP">SP</option>
+                        </optgroup>
+                        <optgroup label="Regiao Nordeste">
+                            <option value="PR">PR</option>
+                            <option value="PA">PA</option>
+                            <option value="AL">AL</option>
+                        </optgroup>
+                    </select></p>
+
+                <p><label for="ccidade">Cidade:</label>
+                    <input type="text" name="tcidade" id="ccidade" size="20" maxlength="20" placeholder="Cidade" list="cidades" /></p>
+                <datalist id="cidades">
+                        <option value="Belford Roxo"></option>
+                        <option value="Brumadinho"></option>
+                        <option value="São Caetano Do Sul"></option>
+                        <option value="Foz Do Iguaçu"></option>
+                        <option value="Belém"></option>
+                        <option value="Maragogi"></option>
+                    </datalist>
+            </fieldset>
+
+            <fieldset id="mensagem">
+                <legend>Mensagem do Usuário </legend>
+                <p><label for="cgrau">Grau de Urgência:</label> Min<input type="range" name="tgrau" id="cgrau" min="1" max="10" />Máx </p>
+                <p><label for="cmensagem">Mensagem: </label>
+                    <textarea name="tmensagem" id="cmensagem" cols="45" rows="5" placeholder="Digite sua mensagem aqui..."></textarea></p>
+            </fieldset>
+
+            <fieldset id="pedido">
+                <legend>Quero um Google Glass</legend>
+                <p><input type="checkbox" name="tgostaria" id="cgostaria" />
+                    <label for="cgostaria"> Gostaria de adquirir um Google Glass quando disponível</labe></p>
+                    <p><label for="ccor">Cor:</label><input type="color" name="tcor" id="ccor" /></p>
+                <p><label for="cquantidade">Quantidade:</label><input type="number" name="tquantidade" id="cquantidade" size="4" maxlength="4" min="1" max="1000" placeholder="0" /></p>
+                <p><label for="ctotal">Preço Total:</label><input type="text" name="ttotal" id="ctotal" size="" maxlength="0" placeholder="total a pagar" /> R$</p>
+            </fieldset>
+            <input type="image" src="_imagens/botao-enviar.png" />
+        </form>
+
+        <footer id="rodape">
+            <br/>
+            <h4 style="text-align:center;">&nbsp; &nbsp; &nbsp;Copyright &copy; 2019 - by GAFANHOTO
+                <br/>
+                <a href="http://facebook.com" target="_blank">Facebook</a> | <a href="http://twitter.com" target="_blank"> Twitter</a></h4>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang=pt-br>
+
+<head>
+    <meta charset="UTF-8 " />
+    <title>Tudo sobre o Google Glass</title>
+    <link rel="stylesheet" href="_css/estilo.css" />
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <link rel="stylesheet" href="_css/media.css" />
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="_imagens/multimidia.png" />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmousemove="mudaricone('_imagens/home.png')" onmouseout="mudaricone('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+                    <li onmousemove="mudaricone('_imagens/especificacoes.png')" onmouseout="mudaricone('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmousemove="mudaricone('_imagens/fotos.png')" onmouseout="mudaricone('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmousemove="mudaricone('_imagens/multimidia.png')"><a href="multimidia.html">Multimída</a></li>
+                    <li onmousemove="mudaricone('_imagens/contato.png')" onmouseout="mudaricone('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full">
+            <article id="cabecalho-pag">
+                <header id="cabecalho-corpo">
+                    <hgroup>
+                        <h2>Glass > Multimídia</h2>
+                        <h1>Sons e Vídeos</h1>
+                        <h3>por Gafanhoto</h3>
+                        <h3><span>Atualizado em 01/Maio/2013</span></h3>
+                    </hgroup>
+                </header>
+            </article>
+            <div id="audio-video">
+                <audio id="musica" controls>
+                <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+                <source src="_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"/>   
+                Desculpe não e possivel carregar o áudio em seu navegador.
+                </audio>
+                <video id="filme" controls poster="_imagens/video-mini03.jpg">
+                    <source src="_media/getting-started.mp4" type="video/mp4" />
+                    Desculpe não e possivel carregar o áudio em seu navegador.
+                </video>
+
+            </div>
+        </section>
+
+        <footer id="rodape">
+            <br/>
+            <h4 style="text-align:center;">&nbsp; &nbsp; &nbsp;Copyright &copy; 2019 - by GAFANHOTO
+                <br/>
+                <a href="http://facebook.com" target="_blank">Facebook</a> | <a href="http://twitter.com" target="_blank"> Twitter</a></h4>
+        </footer>
+    </div>
+</body>
+
+</html>

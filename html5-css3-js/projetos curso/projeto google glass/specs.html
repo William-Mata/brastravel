@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang=pt-br>
+
+<head>
+    <meta charset="UTF-8 " />
+    <title>Tudo sobre o Google Glass</title>
+    <link rel="stylesheet" href="_css/estilo.css" />
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <link rel="stylesheet" href="_css/specs.css" />
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="_imagens/especificacoes.png" />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li onmousemove="mudaricone('_imagens/home.png')" onmouseout="mudaricone('_imagens/especificacoes.png')"><a href="index.html">Home</a></li>
+                    <li onmousemove="mudaricone('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmousemove="mudaricone('_imagens/fotos.png')" onmouseout="mudaricone('_imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmousemove="mudaricone('_imagens/multimidia.png')" onmouseout="mudaricone('_imagens/especificacoes.png')"><a href="multimidia.html">Multimída</a></li>
+                    <li onmousemove="mudaricone('_imagens/contato.png')" onmouseout="mudaricone('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full">
+            <article id="cabecalho-pag">
+                <header id="cabecalho-corpo">
+                    <hgroup>
+                        <h2>Glass > Especificações</h2>
+                        <h1>Raio-X no Google Glass</h1>
+                        <h3>por Gafanhoto</h3>
+                        <h3><span>Atualizado em 01/Maio/2013</span></h3>
+                    </hgroup>
+                </header>
+                <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                <section id="conteudo">
+                    <img id="oculos-spec" src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa" />
+                    <map name="meumapa">
+                        <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela" />
+                        <area shape="poly" coords="28,144,26,169,83,252,82,215" href="google-glass.html#sensor" target="janela"/>
+                        <area shape="circle" coords="158,244,12" href="google-glass.html#camera" target="janela"/>
+                        <area shape="circle" coords="75,51,12" href="google-glass.html#bateria" target="janela"/>
+                    </map>
+                    <iframe src="google-glass.html" name="janela" id="frame-specs"></iframe>
+                </section>
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <br/>
+            <h4 style="text-align:center;">&nbsp; &nbsp; &nbsp;Copyright &copy; 2019 - by GAFANHOTO
+                <br/>
+                <a href="http://facebook.com" target="_blank">Facebook</a> | <a href="http://twitter.com" target="_blank"> Twitter</a></h4>
+        </footer>
+    </div>
+</body>
+
+</html>
