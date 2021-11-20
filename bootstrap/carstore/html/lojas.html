@@ -8,10 +8,11 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <title>Car Store - Home</title>
+    <title>Car Store - Lojas</title>
 </head>
 
 <body>
+
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light text-white bg-dark p-0">
@@ -22,15 +23,15 @@
                 <div class="collapse navbar-collapse mx-3" id="collapsibleNavId">
                     <ul class="navbar-nav">
                         <li class="nav-item mr-auto dropdown">
-                            <a class="btn btn-outline-danger dropdown-toggle fw-bold fs-5 text-white" id="dropdownId"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            <a class="btn btn-sm btn-outline-danger dropdown-toggle fw-bold fs-6 text-white"
+                                id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                 href="carros.html">Carros</a>
                             <div class="dropdown-menu bg-dark p-0" aria-labelledby="dropdownId">
-                                <a class="w-100 btn btn-outline-danger fw-bold fs-6 text-white"
+                                <a class="w-100 btn btn-sm btn-outline-danger fw-bold  text-white"
                                     href="carros-classicos.html">Carros Classicos</a>
-                                <a class="w-100 btn btn-outline-danger fw-bold fs-6 text-white"
+                                <a class="w-100 btn btn-sm btn-outline-danger fw-bold fs-6 text-white"
                                     href="carros-esportivos.html">Carros Esportivos</a>
-                                <a class="w-100 btn btn-outline-danger fw-bold fs-6 text-white"
+                                <a class="w-100 btn btn-sm btn-outline-danger fw-bold fs-6 text-white"
                                     href="carros-populares.html">Carros
                                     Populares</a>
                             </div>
@@ -44,17 +45,17 @@
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-3">
-                            <a class="btn btn-outline-danger fw-bold fs-5 text-white" href="lojas.html">Lojas</a>
+                            <a class="btn btn-sm btn-outline-danger fw-bold fs-6 text-white" href="lojas.html">Lojas</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="btn btn-outline-danger fw-bold fw-bold fs-5 text-white "
+                            <a class="btn btn-sm btn-outline-danger fw-bold fw-bold fs-6 text-white "
                                 href="contato.html">Contato</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="btn btn-outline-danger fw-bold fs-5 text-white" href="sobre.html">Sobre</a>
+                            <a class="btn btn-sm btn-outline-danger fw-bold fs-6 text-white" href="sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item mx-3" id="btn-logar">
-                            <a class="btn btn-outline-danger fw-bold fs-5 text-white" data-bs-toggle="modal"
+                            <a class="btn btn-sm btn-outline-danger fw-bold fs-6 text-white" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">Logar</a>
                         </li>
                     </ul>
@@ -67,10 +68,11 @@
     <div class="modal shadow-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-transparent text-white border border-dark border-3">
+            <div class="modal-content text-white border border-dark border-3" id="background-modal">
                 <div class="modal-header">
                     <h5 class="modal-title text-white" id="staticBackdropLabel">Acesse sua conta</h5>
-                    <button type="button" class="btn-close btn-dark btn-outline-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-dark btn-outline-danger" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="row g-3 needs-validation" novalidate>
@@ -78,7 +80,8 @@
                             <div class="input-group">
                                 <span class="input-group-text text-white bg-transparent btn-outline-danger"
                                     id="inputGroupPrepend">Usuario</span>
-                                <input type="text" class="form-control text-white bg-transparent btn-outline-danger" placeholder="usuario">
+                                <input type="text" class="form-control text-white bg-transparent btn-outline-danger"
+                                    placeholder="usuario">
                             </div>
                         </div>
 
@@ -86,7 +89,8 @@
                             <div class="input-group">
                                 <span class="input-group-text text-white bg-transparent btn-outline-danger"
                                     id="inputGroupPrepend">Senha</span>
-                                <input type="password" class="form-control text-white bg-transparent btn-outline-danger" placeholder="********">
+                                <input type="password" class="form-control text-white bg-transparent btn-outline-danger"
+                                    placeholder="********">
                             </div>
                         </div>
                     </form>
@@ -94,14 +98,96 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark btn-outline-danger text-white "
                         data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-dark btn-outline-danger text-white" data-bs-dismiss="modal">Logar</button>
+                    <button type="button" class="btn btn-dark btn-outline-danger text-white"
+                        data-bs-dismiss="modal">Logar</button>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <aside class="py-5 ">
+    <aside class="py-3 h-auto
+    ">
+
+      
+        <div class="container-fluid d-inline-flex justify-content-center align-self-center shadow-lg ">
+
+            <div class="display-6 text-white w-auto me-5 ">
+                <h1 class="lead display-5">C</h1>
+                <h1 class="lead display-5">A</h1>
+                <h1 class="lead display-5">R</h1>
+                <br>
+                <h1 class="lead display-5">S</h1>
+                <h1 class="lead display-5">T</h1>
+                <h1 class="lead display-5">O</h1>
+                <h1 class="lead display-5">R</h1>
+                <h1 class="lead display-5">E</h1>
+            </div>
+
+            <div class="card bg-transparent shadow-lg btn-outline-danger text-white h-auto w-25 mx-3">
+                <img src="/img/loja-01-atual.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title ">Car Store - Loja 01</h5>
+                    <div class="card-text">
+                        <p class="bi bi-pin-map-fill"> RJ - Belford Roxo, Xavantes, Av Adamastor, N°500, Cep: 26160-000.
+                        </p>
+                        <p class="bi bi-telephone"> (21) 4002-8922 / (21) 4003-9999</p>
+                        <p class="bi bi-phone"> (21) 99999-8888 / (21) 98888-7777</p>
+                        <p class="bi bi-envelope"> carstore01@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-white-50">Atualizado há 3 meses</small>
+                </div>
+            </div>
+
+            <div class="card bg-transparent shadow-lg btn-outline-danger text-white h-auto w-25 mx-3">
+                <img src="/img/loja-02-atual.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Car Store - Loja 02 </h5>
+                    <div class="card-text">
+                        <p class="bi bi-pin-map-fill"> RJ - Macae, Lagomar, Travesa W-22 , N°59, Cep: 46230-000.
+                        </p>
+                        <p class="bi bi-telephone"> (22) 2003-2222 / (22) 2001-5555</p>
+                        <p class="bi bi-phone"> (22) 98555-4242 / (22) 99421-5325</p>
+                        <p class="bi bi-envelope"> carstore02@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-white-50">Atualizado há 3 meses</small>
+                </div>
+            </div>
+
+            <div class="card bg-transparent shadow-lg btn-outline-danger text-white h-auto w-25 mx-3">
+                <img src="/img/loja-03-atual.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Car Store - Loja 03</h5>
+                    <div class="card-text">
+                        <p class="bi bi-pin-map-fill"> AL - Maceio, Matriz, AL 101, N°4, Cep: 57370-000.
+                        </p>
+                        <p class="bi bi-telephone"> (82) 4002-3123 / (82) 2943-3214</p>
+                        <p class="bi bi-phone"> (82) 99327-2131 / (82) 97321-7777</p>
+                        <p class="bi bi-envelope"> carstore03@gmail.com</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-white-50">Atualizado há 3 meses</small>
+                </div>
+            </div>
+
+
+            <div class="display-6 text-white w-auto ms-5">
+                <h1 class="lead display-5">C</h1>
+                <h1 class="lead display-5">A</h1>
+                <h1 class="lead display-5">R</h1>
+                <br>
+                <h1 class="lead display-5">S</h1>
+                <h1 class="lead display-5">T</h1>
+                <h1 class="lead display-5">O</h1>
+                <h1 class="lead display-5">R</h1>
+                <h1 class="lead display-5">E</h1>
+            </div>
+        </div>
 
     </aside>
 
