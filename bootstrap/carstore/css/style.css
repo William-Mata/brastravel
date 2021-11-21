@@ -1,4 +1,4 @@
-html, body{
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -6,16 +6,17 @@ html, body{
 }
 
 aside {
-    background-image: url(/img/background-aside.jpg) ;
+    background-image: url(/img/background-aside.jpg);
     background-size: 100%;
     min-height: 51%;
+    max-height: auto;
 }
 
-footer p{
+footer p {
     font-size: 12px;
 }
 
-footer .container-fluid{
+footer .container-fluid {
     width: 100%;
     bottom: 0;
     position: fixed;
@@ -33,30 +34,42 @@ h3 {
 }
 
 
-#carousel-principal img{
+#carousel-principal img {
     width: 100%;
     height: 40vh;
 }
 
-#carousel-historia img{
-width: 100%;
-height: 50vh;
+#carousel-historia img {
+    width: 100%;
+    height: 50vh;
 }
 
-#texto-historia{
+#texto-historia {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     color: white;
     font-style: oblique;
     font-weight: bolder;
-    
+
 }
 
-#background-modal{
+#background-modal {
     background-color: rgba(0, 0, 0, 0.90);
 }
 
-#btn-logar{
+.filtro {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+#btn-logar {
     display: inline-flex;
     justify-self: end;
+}
+
+#carros-exposicao {
+    height: 60vh;
+}
+
+#carros {
+    width: 19.7%;
 }
