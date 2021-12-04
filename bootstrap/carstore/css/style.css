@@ -7,7 +7,7 @@ html, body {
 
 aside {
     background-image: url(/img/background-aside.jpg);
-    background-size: 100%;
+    background-size: auto;
     min-height: 51%;
     max-height: auto;
 }
@@ -70,6 +70,6 @@ h3 {
     height: 60vh;
 }
 
-#carros {
-    width: 19.7%;
+.carros {
+    width: 19%;
 }
