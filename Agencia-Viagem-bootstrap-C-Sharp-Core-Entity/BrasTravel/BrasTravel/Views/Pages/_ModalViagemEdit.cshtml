@@ -1,0 +1,141 @@
+﻿@model Pessoa
+
+
+<div class="modal fade bg-transparent" id="editarModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg ">
+        <div class="modal-content colorBlue">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editarModalLabel">Alterar Viagem</h5>
+                <button type="button" class="btn-close btn-outline-warning bg-warning" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body m-0 p-0 justify-content-center align-content-center">
+
+                <form asp-action="Edit" class="m-0 p-0 py-3">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 mx-auto">
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 border border-1 border-warning rounded ">
+                                        <input type="hidden" asp-for="IdPessoa" />
+                                        <input type="hidden" asp-for="ViagemId" readonly />
+                                        <input type="hidden" asp-for="Viagem" readonly />
+
+                                        <label asp-for="Nome" class="control-label text-white mt-1">
+                                            Nome:
+                                        </label>
+                                    </div>
+                                    <div class="col-9 col-sm-9 col-md-9 col-lg-9 ">
+                                        <input asp-for="Nome"
+                                               class="form-control text-white bg-transparent btn-outline-warning" readonly />
+                                    </div>
+                                    <span asp-validation-for="Nome" class="text-warning"></span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 border border-1 border-warning rounded ">
+                                        <label asp-for="Idade" class="control-label text-white mt-1">Idade:</label>
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                        <input asp-for="Idade"
+                                               class="form-control text-white bg-transparent btn-outline-warning" readonly />
+                                    </div>
+                                    <span asp-validation-for="Idade" class="text-warning"></span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 border border-1 border-warning rounded ">
+                                        <label asp-for="CPF" class="control-label text-white mt-1">CPF:</label>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                        <input asp-for="CPF"
+                                               class="form-control text-white bg-transparent btn-outline-warning" readonly />
+                                    </div>
+                                    <span asp-validation-for="CPF" class="text-warning"></span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.Valor" class="control-label text-white mt-1">Valor:</label>
+                                    </div>
+                                    <div class="col-5 col-sm-5 col-md-5 col-lg-5 ">
+                                        <input asp-for="Viagem.Valor"
+                                               class="form-control text-white bg-transparent btn-outline-warning" readonly />
+                                    </div>
+                                    <span asp-validation-for="Viagem.Valor" class="text-warning"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-5 mx-auto">
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.Destino" class="control-label text-white mt-1">Destino:</label>
+                                    </div>
+                                    <div class="col-9 col-sm-9 col-md-9 col-lg-9">
+                                        <input asp-for="Viagem.Destino"
+                                               class="form-control text-white bg-transparent btn-outline-warning" />
+                                    </div>
+                                    <span asp-validation-for="Viagem.Destino" class="text-warning"></span>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-md-3 border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.Origem" class="control-label text-white mt-1">Origem:</label>
+                                    </div>
+                                    <div class="col">
+                                        <input asp-for="Viagem.Origem"
+                                               class="form-control text-white bg-transparent btn-outline-warning" />
+                                    </div>
+                                    <span asp-validation-for="Viagem.Origem" class="text-warning"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.DataIda" class="control-label text-white mt-1">Data Ida:</label>
+                                    </div>
+                                    <div class="col-8 col-sm-8 col-md-8 col-lg-8">
+                                        <input asp-for="Viagem.DataIda"
+                                               class="form-control text-white bg-transparent btn-outline-warning" />
+                                    </div>
+                                    <span asp-validation-for="Viagem.DataIda" class="text-warning"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.DataVolta" class="control-label text-white mt-1">Data Volta:</label>
+                                    </div>
+                                    <div class="col-8 col-sm-8 col-md-8 col-lg-8">
+                                        <input asp-for="Viagem.DataVolta"
+                                               class="form-control text-white bg-transparent btn-outline-warning" />
+                                    </div>
+                                    <span asp-validation-for="Viagem.DataVolta" class="text-warning"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-warning text-white"
+                                    data-bs-dismiss="modal">
+                                Sair
+                            </button>
+                            <button type="submit" data-bs-save="modal" class="btn btn-outline-warning text-white">Alterar</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

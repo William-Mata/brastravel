@@ -1,0 +1,70 @@
+﻿@model BrasTravel.Models.Contato
+
+@{
+    ViewData["Title"] = "Administracao";
+}
+
+
+<div class="container-fluid" id="ModalAqui">
+</div>
+
+<div class="container-fluid m-0 colorBlue shadow-lg rounded py-3">
+<h4 class="shadow-lg text-center mb-3">Administracao do site - BrasTravel</h4>
+
+    <table class="table text-white">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Mensagem)
+                </th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.contatos)
+            {
+                <tr>
+                    <td>
+                        @item.Nome
+                    </td>
+                    <td>
+                        @item.Email
+                    </td>
+                    <td>
+                        @item.Mensagem
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-outline-warning" data-bs-toggle="modalAjax" data-bs-target="#editarModalC"
+                            data-url="@Url.Action($"EditAdm/{item.IdContato}")">
+                            <img src="~/img/edit.png" />
+                        </button>
+
+                        <button type="button" class="btn btn-sm btn-outline-warning mt-1" data-bs-toggle="modalAjax" data-bs-target="#detalhesModalC"
+                            data-url="@Url.Action($"DetailsAdm/{item.IdContato}")">
+                            <img src="~/img/ver-detalhes.png" />
+                        </button>
+
+                        <button type="button" class="btn btn-sm btn-outline-warning  mt-1" data-bs-toggle="modalAjax" data-bs-target="#deleteModalC"
+                            data-url="@Url.Action($"DeleteAdm/{item.IdContato}")">
+                            <img src="~/img/delete.png" />
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
+

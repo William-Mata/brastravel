@@ -1,0 +1,89 @@
+﻿@model BrasTravel.Models.Contato
+@{
+    ViewData["Title"] = "Contatos";
+}
+
+
+<div class="container-fluid p-5">
+    <div class="row">
+
+        <div class="col-12 col-md-6 col-lg shadow rounded p-3">
+
+            <h1 class="display-3">Contatos</h1>
+            <p class="lead fs-3">Entre em contato conosco</p>
+            <hr class="my-2">
+
+            <div class="row">
+
+                <div class="col-6 col-md-6 col-sm-6 col-lg-6">
+
+                    <p>
+                        <img src="~/img/whatsapp.png">  021 99999-8888
+                    </p>
+                    <p>
+                        <img src="~/img/telefone-celular.png"> 021 98888-7777
+                    </p>
+                    <p>
+                         <img src="~/img/telefone.png"> 021 2222-3333
+                    </p>
+                    <p>
+                         <img src="~/img/telefone.png"> 0800 4002-8922 
+                    </p>
+                </div>
+
+                <div class="col-6 col-md-2 col-sm-1 col-lg-6">
+
+                    <p>
+                       <img src="~/img/o-email.png"> BrasTravel@email.com
+                    </p>
+                    <p>
+                         <img src="~/img/facebook.png"> Facebook.com/BrasTravel
+                    </p>
+                    <p>
+                       <img src="~/img/twitter.png"> Twitter.com/BrasTravel
+                    </p>
+                    <p>
+                        <img src="~/img/instagram.png"> Instagram.com/BrasTravel
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-12 col-md-6 col-lg shadow rounded p-3">
+
+            <form asp-action="CreateContato">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group d-inline-flex mb-3">
+                    <span asp-for="Nome" class="input-group-text text-white bg-transparent btn-outline-warning">Nome</span>
+                    <input asp-for="Nome" type="text" class="form-control text-white bg-transparent btn-outline-warning" value="Fulano beutrano">
+                    <span asp-validation-for="Nome" class="text-warning"></span>
+                </div>
+                <div class="form-group d-inline-flex mb-3">
+                    <span asp-for="Email" class="input-group-text text-white bg-transparent btn-outline-warning">E-mail</span>
+                    <input asp-for="Email" type="text" class="form-control text-white bg-transparent btn-outline-warning" value="email@example.com">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <span asp-for="Mensagem" class="input-group-text text-white bg-transparent btn-outline-warning">Mensagem</span>
+                    <textarea asp-for="Mensagem" class="form-control text-white bg-transparent btn-outline-warning mt-1" rows="5">Digite o motivo do contato...</textarea>
+                    <span asp-validation-for="Mensagem" class="text-warning"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <button type="submit" value="Create" class="btn btn-success btn-outline-warning">Enviar</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

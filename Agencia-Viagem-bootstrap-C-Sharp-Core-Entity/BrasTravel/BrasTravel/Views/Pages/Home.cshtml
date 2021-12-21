@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-fluid p-5">
+    <div class="row justify-content-center mx-auto shadow m-2 py-2">
+
+        <div class="col-5 col-md-6 col-sm-12 col-lg-5 m-1 p-3 bg-warning rounded">
+            <h3 class="text-white text-center shadow-lg rounded py-1">Viagens Nacionais</h3>
+            <div id="carouselExampleCaptions1" class="carousel slide shadow bg-warning" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"></li>
+                </ol>
+                <a class="btn" asp-controller="Pages" asp-action="Nacionais">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/lugares-para-viajar-brasil-820x430.jpg"
+                                 class="d-block imgIndex  mx-auto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/lugares-viajar-brasil-praia-forte-820x430.jpeg"
+                                 class="d-block imgIndex mx-auto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/lugares-viajar-no-brasil-carneiros-820x615.jpeg"
+                                 class="d-block imgIndex  mx-auto">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions1" role="button"
+                   data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions1" role="button"
+                   data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-5 col-md-6 col-sm-12 col-lg-5 m-1 p-3 bg-warning rounded">
+            <h3 class="text-white text-center shadow-lg rounded py-1">Viagens Internacionais</h3>
+            <div id="carouselExampleCaptions" class="carousel slide shadow " data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                </ol>
+                <a class="btn" asp-controller="Pages" asp-action="Internacionais">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active imgIndex">
+                            <img src="/img/italia.jpg" class="d-block imgIndex  mx-auto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/bora-bora.jpg" class="d-block imgIndex  mx-auto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/londres.jpg" class="d-block imgIndex mx-auto">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row justify-content-center mx-auto shadow h-auto mb-5 mt-5 py-2">
+
+        <div class="col-5 col-md-6 col-sm-12 col-lg-5 m-1 rounded shadow colorBlue">
+            <a class="btn btn-sm text-white d-inline-flex" asp-controller="Pages" asp-action="Promocoes">
+                <div class="container">
+                    <h2>Promoções Nacionais</h2>
+                    <hr class="my-2">
+                    <p>
+                        Promoções com até 60% de desconto para suas viagens Nacionais, confira nossas promoções
+                        clicando aqui ou acessando a nossa pagina de promoções.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-5 col-md-6 col-sm-12 col-lg-5 m-1 rounded shadow colorBlue">
+            <a class="btn btn-sm text-white d-inline-flex" asp-controller="Pages" asp-action="Promocoes">
+                <div class="container ">
+                    <h2>Promoções Internacionais</h2>
+                    <hr class="my-2">
+                    <p>
+                        Promoções com até 40% de desconto para suas viagens Internacionais, confira nossas
+                        promoções
+                        clicando aqui ou acessando a nossa pagina de promoções.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>

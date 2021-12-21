@@ -1,0 +1,117 @@
+﻿@model Pessoa
+
+
+<div class="modal fade bg-transparent" id="deleteModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg ">
+        <div class="modal-content colorBlue">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editarModalLabel">Cancelar Viagem</h5>
+                <button type="button" class="btn-close btn-outline-warning bg-warning" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body m-0 p-0 justify-content-center align-content-center">
+
+                <form asp-action="Delete" class="m-0 p-0 py-3">
+                    <div class="row">
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="col-5 col-md-5 col-sm-5 col-lg-5 mx-auto">
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <input type="hidden" asp-for="IdPessoa" />
+                                        <input type="hidden" asp-for="Viagem" />
+                                        <input type="hidden" asp-for="ViagemId" />
+                                        <label asp-for="Nome" class="control-label text-white mt-1">
+                                            Nome: @Model.Nome
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="Idade" class="control-label text-white mt-1">Idade: @Model.Idade</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="CPF" class="control-label text-white mt-1">CPF: @Model.CPF</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.Valor" class="control-label text-white mt-1">
+                                            Valor:
+                                            @Model.Viagem.Valor
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-5 col-md-5 col-sm-5 col-lg-5 mx-auto">
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.Destino" class="control-label text-white mt-1">
+                                            Destino:
+                                            @Model.Viagem.Destino
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.Origem" class="control-label text-white mt-1">
+                                            Origem:
+                                            @Model.Viagem.Origem
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.DataIda" class="control-label text-white mt-1">
+                                            Data Ida:
+                                            @Model.Viagem.DataIda
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="Viagem.DataVolta" class="control-label text-white mt-1">
+                                            Data Volta:
+                                            @Model.Viagem.DataVolta
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-warning text-white"
+                                        data-bs-dismiss="modal">
+                                    Sair
+                                </button>
+                                <button type="submit" data-bs-save="modal" class="btn btn-outline-warning text-white">Cancelar Viagem</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

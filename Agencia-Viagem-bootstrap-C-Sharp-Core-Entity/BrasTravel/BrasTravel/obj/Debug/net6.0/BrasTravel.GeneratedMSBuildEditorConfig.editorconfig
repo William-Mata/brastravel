@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BrasTravel
+build_property.RootNamespace = BrasTravel
+build_property.ProjectDir = c:\Users\Remakker\Desktop\Recode\Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\BrasTravel\BrasTravel\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\Remakker\Desktop\Recode\Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\BrasTravel\BrasTravel
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Administracao/Administracao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWNhb1xBZG1pbmlzdHJhY2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Administracao/_ModalAdmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWNhb1xfTW9kYWxBZG1EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Administracao/_ModalAdmDetalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWNhb1xfTW9kYWxBZG1EZXRhbGhlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Administracao/_ModalAdmEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWNhb1xfTW9kYWxBZG1FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/Contatos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ29udGF0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/Internacionais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcSW50ZXJuYWNpb25haXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/Nacionais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcTmFjaW9uYWlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/Promocoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcUHJvbW9jb2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/Viagem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcVmlhZ2VtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/_ModalViagemDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcX01vZGFsVmlhZ2VtRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/_ModalViagemDetalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcX01vZGFsVmlhZ2VtRGV0YWxoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Pages/_ModalViagemEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcX01vZGFsVmlhZ2VtRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Remakker/Desktop/Recode/Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28/Agencia-Viagem-bootstrap-C-Sharp-Core-Entity/BrasTravel/BrasTravel/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-czyga7vh89

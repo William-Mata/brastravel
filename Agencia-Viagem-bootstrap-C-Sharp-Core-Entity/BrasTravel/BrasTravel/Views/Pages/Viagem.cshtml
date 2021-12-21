@@ -1,0 +1,105 @@
+﻿@model BrasTravel.Models.Pessoa
+@{
+    ViewData["Title"] = "Viagem";
+}
+
+
+
+<div class="container-fluid" id="ModalAqui">
+</div>
+
+<div class="container-fluid m-0 colorBlue shadow-lg rounded py-3">
+
+    <h4 class="shadow-lg text-center mb-3">Viagens - BrasTravel</h4>
+
+    <table class="table text-white">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Idade)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CPF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Viagem.Origem)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Viagem.Destino)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Viagem.Valor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Viagem.DataIda)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Viagem.DataVolta)
+                </th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.pessoa)
+            {
+                <tr>
+                    <td>
+                        @item.Nome
+                    </td>
+                    <td>
+                        @item.Idade
+                    </td>
+                    <td>
+                        @item.CPF
+                    </td>
+                    <td>
+                        @item.Viagem.Origem
+                    </td>
+                    <td>
+                        @item.Viagem.Destino
+                    </td>
+                    <td>
+                        R$: @item.Viagem.Valor
+                    </td>
+
+                    <td>
+                        @item.Viagem.DataIda
+                    </td>
+                    <td">
+                        @item.Viagem.DataVolta
+                    </td>
+                    <td>
+
+                        <button type="button" class="btn btn-sm btn-outline-warning" data-bs-toggle="modalAjax" data-bs-target="#editarModal"
+                            data-url="@Url.Action($"Edit/{item.IdPessoa}")">
+                            <img src="~/img/edit.png" />
+                        </button>
+
+                        <button type="button" class="btn btn-sm btn-outline-warning mt-1" data-bs-toggle="modalAjax" data-bs-target="#detalhesModal"
+                            data-url="@Url.Action($"Details/{item.IdPessoa}")">
+                            <img src="~/img/ver-detalhes.png" />
+                        </button>
+
+                        <button type="button" class="btn btn-sm btn-outline-warning  mt-1" data-bs-toggle="modalAjax" data-bs-target="#deleteModal"
+                            data-url="@Url.Action($"Delete/{item.IdPessoa}")">
+                            <img src="~/img/delete.png" />
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
+
+

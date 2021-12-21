@@ -1,0 +1,80 @@
+﻿@model Contato
+
+
+<div class="modal fade bg-transparent" id="deleteModalC">
+    <div class="modal-dialog modal-dialog-centered modal-lg ">
+        <div class="modal-content colorBlue">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editarModalLabel">Deletar Contato</h5>
+                <button type="button" class="btn-close btn-outline-warning bg-warning" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body m-0 p-0 justify-content-center align-content-center">
+
+                <form asp-action="DeleteAdm" class="row m-0 p-0 py-3">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col-5 col-md-5 col-sm-5 col-lg-5 mx-auto">
+
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <input type="hidden" asp-for="IdContato" />
+                                        <label asp-for="Nome" class="control-label text-white mt-1">
+                                            Nome:
+                                            @Model.Nome
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="Email" class="control-label text-white mt-1">
+                                            E-mail:
+                                            @Model.Email
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-5 col-md-5 col-sm-5 col-lg-5 mx-auto">
+                            <div class="form-group mb-2">
+                                <div class="row">
+                                    <div class="col border border-1 border-warning rounded ">
+                                        <label asp-for="Mensagem" class="control-label  text-white mt-1">
+                                            Mensagem:
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="row">
+                                    <div class="col m-0 p-0">
+                                        <textarea asp-for="Mensagem" class="form-control text-white bg-transparent btn-outline-warning mt-1" rows="5" readonly>@Model.Mensagem</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group m-0 p-0 mt-3">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-warning text-white"
+                                    data-bs-dismiss="modal">
+                                Sair
+                            </button>
+                            <button type="submit" data-bs-save="modal" class="btn btn-outline-warning text-white">Apagar</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>

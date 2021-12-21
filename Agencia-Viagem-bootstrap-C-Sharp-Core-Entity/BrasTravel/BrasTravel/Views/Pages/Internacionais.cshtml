@@ -1,0 +1,329 @@
+﻿@model BrasTravel.Models.Pessoa
+@{
+    ViewData["Title"] = "Internacionais";
+}
+
+<div class="modal fade bg-transparent" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content colorBlue">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Comprar Passagens</h5>
+                <button type="button" class="btn-close btn-outline-warning bg-warning" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="container-fluid justify-content-center">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-5 border border-1 border-warning rounded ">
+                                            <label asp-for="Nome" class="control-label text-white mt-1">
+                                                Nome Completo:
+                                            </label>
+                                        </div>
+                                        <div class="col m-0">
+                                            <input asp-for="Nome"
+                                                   class="form-control text-white bg-transparent btn-outline-warning" />
+                                        </div>
+                                        <span asp-validation-for="Nome" class="text-warning"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2 border border-1 border-warning rounded ">
+                                            <label asp-for="Idade" class="control-label text-white mt-1">Idade:</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input asp-for="Idade"
+                                                   class="form-control text-white bg-transparent btn-outline-warning" />
+                                        </div>
+                                        <span asp-validation-for="Idade" class="text-warning"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-2 border border-1 border-warning rounded ">
+                                            <label asp-for="CPF" class="control-label text-white mt-1">CPF:</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input asp-for="CPF"
+                                                   class="form-control text-white bg-transparent btn-outline-warning" />
+                                        </div>
+                                        <span asp-validation-for="CPF" class="text-warning"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-3 border border-1 border-warning rounded ">
+                                            <label asp-for="Viagem.Valor" class="control-label text-white mt-1">Valor:</label>
+                                        </div>
+                                        <div class="col">
+                                            <input asp-for="Viagem.Valor"
+                                                   class="form-control text-white bg-transparent btn-outline-warning" readonly value="" id="Valor" />
+                                        </div>
+                                        <span asp-validation-for="Viagem.Valor" class="text-warning"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-3 border border-1 border-warning rounded ">
+                                            <label class="control-label text-white mt-1">Cupom:</label>
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control text-white bg-transparent btn-outline-warning" id="Cupom" />
+                                            <span class="text-warning m-0" id="AspCp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-3 border border-1 border-warning rounded ">
+                                            <label asp-for="Viagem.Destino" class="control-label text-white mt-1">Destino:</label>
+                                        </div>
+                                        <div class="col">
+                                            <input asp-for="Viagem.Destino"
+                                                   class="form-control text-white bg-transparent btn-outline-warning" readonly value="" id="Destino" />
+                                        </div>
+                                        <span asp-validation-for="Viagem.Destino" class="text-warning"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-3 border border-1 border-warning rounded ">
+                                            <label asp-for="Viagem.Origem" class="control-label text-white mt-1">Origem:</label>
+                                        </div>
+                                        <div class="col">
+                                            <input asp-for="Viagem.Origem"
+                                                   class="form-control text-white bg-transparent btn-outline-warning" />
+                                        </div>
+                                        <span asp-validation-for="Viagem.Origem" class="text-warning"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-4 py-1 border border-1 border-warning rounded ">
+                                            <label class="control-label text-white mt-1">Ida e Volta:</label>
+                                        </div>
+                                        <div class="col-md-6 py-1">
+                                            <input type="checkbox" unchecked id="voltaCheck" onchange="Check();" class="checkbox text-white bg-transparent btn-outline-warning" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <div class="row">
+                                        <div class="col-md-4 border border-1 border-warning rounded ">
+                                            <label asp-for="Viagem.DataIda" class="control-label text-white mt-1">Data Ida:</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input asp-for="Viagem.DataIda"
+                                                   class="form-control text-white bg-transparent btn-outline-warning" />
+                                        </div>
+                                        <span asp-validation-for="Viagem.DataIda" class="text-warning"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3" id="volta" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-md-4 border border-1 border-warning rounded ">
+                                            <label asp-for="Viagem.DataVolta" class="control-label text-white mt-1">Data Volta:</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input asp-for="Viagem.DataVolta"
+                                                   class="form-control text-white bg-transparent btn-outline-warning" value="0" />
+                                        </div>
+                                        <span asp-validation-for="Viagem.DataVolta" class="text-warning"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group m-0 p-0">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-warning text-white" onclick="Desconto();"> Aplicar Desconto </button>
+                                <button type="button" class="btn  btn-outline-warning text-white"
+                                        data-bs-dismiss="modal">
+                                    Sair
+                                </button>
+                                <input type="submit" value="Comprar" class="btn btn-outline-warning text-white" />
+
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid mx-auto ">
+
+    <div class="container cardViagens">
+        <div class="card bg-warning">
+            <a class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
+               onclick="Descricao('NY')"> <img src="../img/new.jpg" class="card-img-top"></a>
+            <div class="card-body">
+                <div id="NY">
+                    <h5 class="card-title">Nova York, EUA</h5>
+                    <p class="fs-6 m-0">R$: 7.600</p>
+                </div>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's content.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cardViagens">
+
+        <div class="card bg-warning">
+            <a class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
+               onclick="Descricao('IT')"> <img src="../img/roma.jpg" class="card-img-top"></a>
+            <div class="card-body">
+                <div id="IT">
+                    <h5 class="card-title">Roma, Italia</h5>
+                    <p class="fs-6 m-0">R$: 6.400</p>
+                </div>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's content.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cardViagens">
+
+        <div class="card bg-warning">
+            <a class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
+               onclick="Descricao('LD')"> <img src="../img/londres.jpg" class="card-img-top"></a>
+            <div class="card-body">
+                <div id="LD">
+                    <h5 class="card-title">Londres, Inglaterra</h5>
+                    <p class="fs-6 m-0">R$: 7.200</p>
+                </div>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's content.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cardViagens">
+
+        <div class="card bg-warning">
+            <a class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
+               onclick="Descricao('PE')"> <img src="../img/peru.jpg" class="card-img-top"></a>
+            <div class="card-body">
+                <div id="PE">
+                    <h5 class="card-title">Cusco, Peru</h5>
+                    <p class="fs-6 m-0">R$: 3.900</p>
+                </div>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's content.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cardViagens">
+
+        <div class="card bg-warning">
+            <a class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
+               onclick="Descricao('JA')"> <img src="../img/toquio.jpg" class="card-img-top"></a>
+            <div class="card-body">
+                <div id="JA">
+                    <h5 class="card-title">Tóquio, Japão</h5>
+                    <p class="fs-6 m-0">R$: 8.000</p>
+                </div>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's content.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cardViagens">
+
+        <div class="card bg-warning">
+            <a class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
+               onclick="Descricao('FR')"> <img src="../img/PARIS.jpg" class="card-img-top"></a>
+            <div class="card-body">
+                <div id="FR">
+                    <h5 class="card-title">Paris, França</h5>
+                    <p class="fs-6 m-0">R$: 5.500</p>
+                </div>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's content.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container cardViagens">
+
+        <div class="card bg-warning">
+            <a class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
+               onclick="Descricao('PO')"> <img src="../img/bora-bora.jpg" class="card-img-top "></a>
+            <div class="card-body">
+                <div id="PO">
+                    <h5 class="card-title">Bora Bora, Polinésia Francesa</h5>
+                    <p class="fs-6 m-0">R$: 5.200</p>
+                </div>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's content.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container cardViagens">
+
+        <div class="card bg-warning">
+            <a class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
+               onclick="Descricao('FL')"> <img src="../img/italia.jpg" class="card-img-top"></a>
+            <div class="card-body">
+                <div id="FL">
+                    <h5 class="card-title">Florença, Itália</h5>
+                    <p class="fs-6 m-0">R$: 5.000</p>
+                </div>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the
+                    card's content.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
