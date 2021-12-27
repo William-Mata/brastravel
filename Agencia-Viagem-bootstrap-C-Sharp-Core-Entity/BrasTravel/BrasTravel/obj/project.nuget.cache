@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2AHanqV+mi1Leizq9DH2P9MwD16lEVC2ExZMbx8e0/xG7F4adD873FepARkNjTV5sjyxgcO9HjJM7tRLHy6zTA==",
+  "dgSpecHash": "XTHZqfUHtyQBCU9Xc8Iune0hATODyOYau8EYkbGG8QbT0cgxNJ2UYoy5hb4uYTW+jfMJ0W8tQOGX8pNCSYY4NA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Remakker\\Desktop\\Recode\\Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj",
+  "projectFilePath": "C:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Remakker\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

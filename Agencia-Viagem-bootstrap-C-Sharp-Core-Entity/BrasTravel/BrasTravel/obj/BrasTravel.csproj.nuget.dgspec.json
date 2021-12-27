@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Remakker\\Desktop\\Recode\\Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj": {}
+    "C:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Remakker\\Desktop\\Recode\\Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj": {
+    "C:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\Recode\\Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj",
+        "projectUniqueName": "C:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj",
         "projectName": "BrasTravel",
-        "projectPath": "C:\\Users\\Remakker\\Desktop\\Recode\\Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj",
+        "projectPath": "C:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj",
         "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Remakker\\Desktop\\Recode\\Projeto-modulo-03 - WILLIAM DE MATA DA SILVA - SQUAD 28\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\obj\\",
+        "outputPath": "C:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

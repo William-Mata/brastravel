@@ -1,8 +1,8 @@
 ﻿@model BrasTravel.Models.Pessoa
 @{
     ViewData["Title"] = "Viagem";
+    DateTime dataTest = DateTime.MinValue;
 }
-
 
 
 <div class="container-fluid" id="ModalAqui">
@@ -68,8 +68,20 @@
                     <td>
                         @item.Viagem.DataIda
                     </td>
-                    <td">
-                        @item.Viagem.DataVolta
+                    <td>
+
+
+
+                        @if (@item.Viagem.DataVolta == dataTest)
+                        {
+                            @("")
+                        }
+                        else
+                        {
+                            @item.Viagem.DataVolta
+                        }
+
+
                     </td>
                     <td>
 
