@@ -10,10 +10,10 @@ function NavBar() {
             <div className="container-fluid colorBlue">
                 <Link className="navbar-brand mx-2 my-auto" to='/'> <img src="/img/local-na-rede-internet.png"
                     alt="Home" /></Link>
-                 <button class="navbar-toggler btn-lg btn-outline-warning border-1 border-warning" data-bs-toggle="collapse"
+                  <button className="navbar-toggler btn-lg btn-outline-warning border-1 border-warning" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                         aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                     <ul className="navbar-nav">
