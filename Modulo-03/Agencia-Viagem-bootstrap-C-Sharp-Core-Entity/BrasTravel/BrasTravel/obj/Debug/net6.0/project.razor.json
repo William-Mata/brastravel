@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj",
+  "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\BrasTravel.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,93 +16298,93 @@
   "RootNamespace": "BrasTravel",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Viagem.cshtml",
-      "TargetPath": "Views\\Pages\\Viagem.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Administracao\\_ModalAdmDetalhes.cshtml",
-      "TargetPath": "Views\\Administracao\\_ModalAdmDetalhes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Administracao\\_ModalAdmDelete.cshtml",
-      "TargetPath": "Views\\Administracao\\_ModalAdmDelete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Promocoes.cshtml",
-      "TargetPath": "Views\\Pages\\Promocoes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\_ModalViagemDetalhes.cshtml",
-      "TargetPath": "Views\\Pages\\_ModalViagemDetalhes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Contatos.cshtml",
-      "TargetPath": "Views\\Pages\\Contatos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Internacionais.cshtml",
-      "TargetPath": "Views\\Pages\\Internacionais.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\_ModalViagemEdit.cshtml",
-      "TargetPath": "Views\\Pages\\_ModalViagemEdit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Administracao\\Administracao.cshtml",
-      "TargetPath": "Views\\Administracao\\Administracao.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\_ModalViagemDelete.cshtml",
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\_ModalViagemDelete.cshtml",
       "TargetPath": "Views\\Pages\\_ModalViagemDelete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Home.cshtml",
-      "TargetPath": "Views\\Pages\\Home.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Administracao\\_ModalAdmEdit.cshtml",
-      "TargetPath": "Views\\Administracao\\_ModalAdmEdit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Administracao\\Administracao.cshtml",
+      "TargetPath": "Views\\Administracao\\Administracao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Nacionais.cshtml",
+      "TargetPath": "Views\\Pages\\Nacionais.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\_ModalViagemEdit.cshtml",
+      "TargetPath": "Views\\Pages\\_ModalViagemEdit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Contatos.cshtml",
+      "TargetPath": "Views\\Pages\\Contatos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\_ModalViagemDetalhes.cshtml",
+      "TargetPath": "Views\\Pages\\_ModalViagemDetalhes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Promocoes.cshtml",
+      "TargetPath": "Views\\Pages\\Promocoes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Internacionais.cshtml",
+      "TargetPath": "Views\\Pages\\Internacionais.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Home.cshtml",
+      "TargetPath": "Views\\Pages\\Home.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Viagem.cshtml",
+      "TargetPath": "Views\\Pages\\Viagem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Administracao\\_ModalAdmDetalhes.cshtml",
+      "TargetPath": "Views\\Administracao\\_ModalAdmDetalhes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Administracao\\_ModalAdmEdit.cshtml",
+      "TargetPath": "Views\\Administracao\\_ModalAdmEdit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Pages\\Nacionais.cshtml",
-      "TargetPath": "Views\\Pages\\Nacionais.cshtml",
+      "FilePath": "c:\\Users\\Remakker\\Documents\\GitHub\\projetos\\Modulo-03\\Agencia-Viagem-bootstrap-C-Sharp-Core-Entity\\BrasTravel\\BrasTravel\\Views\\Administracao\\_ModalAdmDelete.cshtml",
+      "TargetPath": "Views\\Administracao\\_ModalAdmDelete.cshtml",
       "FileKind": "mvc"
     }
   ],

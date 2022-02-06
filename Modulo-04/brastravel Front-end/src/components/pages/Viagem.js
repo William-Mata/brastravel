@@ -7,7 +7,7 @@ function Viagem() {
 
 
     return (
-        <div className="container colorBlue rounded my-5 py-3">
+        <div className="container rounded p-5">
             <TabelaViagem />
         </div >
     )

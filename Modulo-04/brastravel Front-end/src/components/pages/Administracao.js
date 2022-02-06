@@ -4,7 +4,7 @@ function Administracao() {
    
 
     return (
-        <div className="container colorBlue rounded my-5 py-3">
+        <div className="container rounded mt-3 p-5">
             <TabelaAdm/>
         </div >
     )

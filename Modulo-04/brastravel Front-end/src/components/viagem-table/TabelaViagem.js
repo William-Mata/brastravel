@@ -24,11 +24,9 @@ function TabelaViagem() {
 
     return (
         <>
-
             <ModalViagem idCliente={idContato} title={title} />
-            <div className="row colorBlue rounded py-3">
+            <div className="container colorBlue my-3 p-5 rounded">
                 <h4 className="text-center mb-3">Viagens - BrasTravel</h4>
-
                 <table className="table text-white text-center text-break">
                     <thead>
                         <tr>
@@ -74,8 +72,6 @@ function TabelaViagem() {
             </div>
         </>
     )
-
-
 }
 
 

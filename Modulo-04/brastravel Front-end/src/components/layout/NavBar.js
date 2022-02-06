@@ -1,19 +1,16 @@
 import { Link } from 'react-router-dom'
-import { } from './NavBar.css'
 
 function NavBar() {
     return (
 
-
-
-        <nav className="navbar navbar-expand-lg text-white p-0 m-0">
+        <nav className="navbar navbar-expand-lg navbar-light text-white p-0 m-0">
             <div className="container-fluid colorBlue">
                 <Link className="navbar-brand mx-2 my-auto" to='/'> <img src="/img/local-na-rede-internet.png"
                     alt="Home" /></Link>
-                <button className="btn btn-outline-warning text-white text-white" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true"
-                    aria-label="Toggle navigation">
-                    Menu
+                  <button className="navbar-toggler btn-lg btn-outline-warning border-1 border-warning" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                     <ul className="navbar-nav">
@@ -42,9 +39,7 @@ function NavBar() {
                 </div>
             </div>
         </nav>
-
     )
-
 }
 
 export default NavBar

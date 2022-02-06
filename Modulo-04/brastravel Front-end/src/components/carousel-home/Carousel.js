@@ -5,7 +5,7 @@ import CarouselInner from './CarouselInner'
 function Carousel({ img1, img2, img3, link, text }) {
     return (
         <div className="col-5 col-sm-5 col-md-5 col-lg-5 m-1 p-3 bg-warning rounded">
-            <h3 className="text-white text-center shadow-lg rounded py-1">{text}</h3>
+            <h3 className="text-white text-center shadow-lg text-break rounded py-1">{text}</h3>
             <div id={link} className="carousel slide shadow " data-bs-ride="carousel">
                 <ol className="carousel-indicators">
                     <li data-bs-target={"#" + link} data-bs-slide-to="0" className="active"></li>
