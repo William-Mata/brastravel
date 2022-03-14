@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+@media (min-width: 1001px) {
+  html {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+      font-size: 10px;
+  }
+}
+
+select option {
+  background: #198754;
+  color: white;
+}
+
+.colorBlue {
+  background-color: rgb(8, 8, 136);
+}

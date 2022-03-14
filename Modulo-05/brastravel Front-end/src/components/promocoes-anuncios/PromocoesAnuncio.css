@@ -1,0 +1,13 @@
+.cardPromocao {
+    width: 24%;
+    height: auto;
+    display: inline-flex;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.card img {
+    margin-top: 10px;
+    width: 100%;
+    height: 170px;
+}
